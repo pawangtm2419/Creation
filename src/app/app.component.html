@@ -3,3 +3,5 @@
   <input type="text" formControlName="model" placeholder="model">
   <button>Submit</button>
 </form>
+<br><br>
+<qrcode [qrdata]="this.form.value.model" [width]="256" [errorCorrectionLevel]="'M'" [elementType]="'svg'"></qrcode>

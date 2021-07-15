@@ -9,6 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class AppComponent implements OnInit{
   title = 'qrgenrator';
   form!: FormGroup;
+  model!: String;
 
   ngOnInit() {
     this.form = new FormGroup({
@@ -17,7 +18,6 @@ export class AppComponent implements OnInit{
   }
 
   onSubmit() {
-    console.log(this.form.value)
-    alert('Submit clicked');
+    console.log(this.form.value);
   }
 }
